@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
 class BackgroundPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()..color = Colors.white.withOpacity(0.1);
+    Paint paint = Paint()..color = Colors.white.withOpacity(0.3);
     final path = Path();
 
     path.moveTo(0, 0);
@@ -41,7 +41,6 @@ class BackgroundPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return false;
   }
 }
